@@ -17,3 +17,5 @@ git commit -m "Add .gitignore to exclude node_modules"
 5. add a remote to your repository and push everything you have to github, send the link to your mentor
   - git remote add origin https://github.com/corinahincu/PROJECT-E-SHOP---.git
   - git push -u origin dev
+  - done 
+  
