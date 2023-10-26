@@ -8,23 +8,15 @@ async function getProducts(){
       if(!response.ok){
         throw new Error(`Failed to fetch data from the server.Status: ${response.status}`)
       }
+
       const data = await response.json()
-      const products = data.products
-      console.log("Data from the server:", data);
-      const transformedProducts = products.map((product) => {
-        return new Product(product)
-      })
-      return transformedProducts
+
+      return data.products.map((product) => new Product(product))
+
     } catch(error){
       console.error('Error fetching product data:', error)
       throw error
     }
-
-
-/* return products.map((product) => {
-  return new Product(product);
-}) */
-
 }
 
 export {getProducts}

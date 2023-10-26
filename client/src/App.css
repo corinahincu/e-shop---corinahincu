@@ -17,3 +17,16 @@
   color: #61dafb;
 }
 
+/* productList */
+h2{
+  text-align: center;
+  margin-right: -35px;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+li {
+  margin-bottom: 10px;
+}
+
