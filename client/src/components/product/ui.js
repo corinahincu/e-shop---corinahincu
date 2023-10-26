@@ -13,7 +13,7 @@ function Product({ productObject }) {
       <h2>{name}</h2>
       <img src={image} alt="" />
       <p>
-        Price: ${money.amount.toFixed(2)} {money.currency}
+        ${money.amount.toFixed(2)} {money.currency}
       </p>
     </div>
   );

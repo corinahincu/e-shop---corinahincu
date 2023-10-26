@@ -16,7 +16,6 @@ function Catalog(){
     fetchData()
   }, [])
 
-
     return (
     <div>
       <h2>Product List</h2>
@@ -26,20 +25,13 @@ function Catalog(){
             <h3>{product.name}</h3>
             <img src={product.image} alt={product.name} />
             <p>
-              Price: ${product.money.amount.toFixed(2)} {product.money.currency}
+              ${product.money.amount.toFixed(2)} {product.money.currency}
             </p>
           </li>
         ))}
       </ul>
     </div>
   );
-/*   return(
-    <div>
-      {products.map((product) => (
-        <Product key={product.id} data={product} />
-      ))}
-    </div>
-  ) */
 }
 
 export default Catalog;
