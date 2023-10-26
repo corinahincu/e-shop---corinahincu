@@ -1,3 +1,4 @@
+# SETUP
 1. create a local git repository named e-shop---
   - done
 
@@ -9,13 +10,34 @@
 
 4. add a single .gitignore to the root of your project and make sure that NONE of the node_modules make it to the staging
   - done
-  - using vscode terminal, navigate to your path, then to create the -gitignore file write : code .gitignore. 
-  - to make sure than node modules don't make it to the staging,we need to add the following lines to the .gitignore file to exclude the node_modules directory
-  - after saving the file, we need to return to the terminal and add commit the .gitignore file to exclude git repository, writing : git add .gitignore
-git commit -m "Add .gitignore to exclude node_modules"
+  - using vscode terminal, navigate to your path, then to create the -gitignore file write : code .gitignore or touch .gitignore
+  - in the file you can add what you want to ignore
 
 5. add a remote to your repository and push everything you have to github, send the link to your mentor
-  - git remote add origin https://github.com/corinahincu/PROJECT-E-SHOP---.git
+  - git remote add origin https://github.com/corinahincu/e-shop---corinahincu.git
   - git push -u origin dev
   - done 
   
+# FRONTEND
+
+1. start by re-factoring the code: all of your components will be in src/components
+  - done
+
+2. rename the Product.js to model.js inside your src/components/product folder, why do you think this is a better approach?
+  - done
+
+3. add Money { id, amount, currency } model - which represents money amounts
+  - done
+
+4. update the Product model - add id, add image (string) - price will hold Money {} object
+  - done
+
+
+
+
+
+
+
+
+//////////////////////////////////
+throw error : Execution of the  function will stop (the statements after throw won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate.

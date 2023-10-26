@@ -1,0 +1,33 @@
+{
+  "type": "module",
+  "name": "e_shop_ff_orm2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json",
+    "start": "node ./public/server.js",
+    "dev": "nodemon ./public/server.js",
+    "include": "../e_shop_ff_orm/public/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.3",
+    "fastify-tsconfig": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/swagger": "^8.11.0",
+    "@fastify/swagger-ui": "^1.10.0",
+    "@fastify/type-provider-typebox": "^3.5.0",
+    "@sinclair/typebox": "^0.31.17",
+    "cors": "^2.8.5",
+    "fastify": "^4.23.2",
+    "fastify-typeorm-plugin": "^2.2.1",
+    "typeorm": "^0.3.17"
+  }
+}

@@ -1,6 +1,7 @@
 import Fastify from "fastify";
 import ProductRoute from './product/api.js';
 import { Product } from './product/entities.js';
+import cors from 'cors'
 const fastify = Fastify({ logger: true });
 fastify.register(import('fastify-typeorm-plugin'), {
     type: 'postgres',
@@ -33,6 +34,7 @@ fastify.get('/', async (request, reply) => {
     console.log(newPayload);
     reply.code(200).send({ products: newPayload });
 });
+
 fastify.listen({ port: 3000 }, (err, address) => {
     if (err) {
         console.error(err);

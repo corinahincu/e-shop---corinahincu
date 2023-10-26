@@ -1,26 +1,29 @@
-import Product from "./Product";
-/* 
-const product1 = new Product(1, "CD", 15.99)
-const product2 = new Product(2, "Headphones", 45.99)
-const product3 = new Product(3, "Boom Box", 325.99)
+import {Product} from "./model";
 
-function getProducts() {
-  return [product1, product2, product3]
-}
- */
+async function getProducts(){
 
-function getProducts(){
+    try {
+      const response = await fetch("http://127.0.0.1:3000")
 
-  const products = [
-    {id:0, name: "CD", price: 15.99},
-    {id:1, name: "Headphones", price: 45.99},
-    {id:2, name: "Boom Box", price: 325.99}
-  ]
+      if(!response.ok){
+        throw new Error(`Failed to fetch data from the server.Status: ${response.status}`)
+      }
+      const data = await response.json()
+      const products = data.products
+      console.log("Data from the server:", data);
+      const transformedProducts = products.map((product) => {
+        return new Product(product)
+      })
+      return transformedProducts
+    } catch(error){
+      console.error('Error fetching product data:', error)
+      throw error
+    }
 
 
-return products.map((product) => {
+/* return products.map((product) => {
   return new Product(product);
-})
+}) */
 
 }
 
