@@ -5,15 +5,16 @@ function Product({ productObject }) {
   const {
     name,
     image,
-    money: { amount, currency },
+    price,
   } = productObject;
 
   return (
     <div className="product">
       <h2>{name}</h2>
-      <p>Amount: {amount}</p>
-      <p>Currency: {currency}</p>
-      <img src={image}  alt=''/>
+      <img src={image} alt="" />
+      <p>
+        Price: ${price.amount.toFixed(2)} {price.currency}
+      </p>
     </div>
   );
 }
