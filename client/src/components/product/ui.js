@@ -5,7 +5,7 @@ function Product({ productObject }) {
   const {
     name,
     image,
-    price,
+    money,
   } = productObject;
 
   return (
@@ -13,7 +13,7 @@ function Product({ productObject }) {
       <h2>{name}</h2>
       <img src={image} alt="" />
       <p>
-        Price: ${price.amount.toFixed(2)} {price.currency}
+        Price: ${money.amount.toFixed(2)} {money.currency}
       </p>
     </div>
   );
