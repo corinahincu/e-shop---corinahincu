@@ -5,8 +5,7 @@ export class Product {
     this.id = id
     this.name = name
     this.image = image
-    this.money = new Money(price);
-    
+    this.money = new Money(price)
   }
 }
 

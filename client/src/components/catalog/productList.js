@@ -29,41 +29,5 @@ function Catalog(){
     </ul>
   );
 
-
-
-
-
-
-
-
-  /* useEffect(() =>{
-    const fetchData = async() => {
-      try{
-        const products = await getProducts()
-        setProducts(products)
-      } catch(error){
-        console.error("Error fetching product data:", error)
-      }
-    }
-    fetchData()
-  }, []) */
-
-    /* return (
-    <div>
-      <h2>Product List</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            <h3>{product.name}</h3>
-            <img src={product.image} alt={product.name} />
-            <p>
-              ${product.money.amount.toFixed(2)} {product.money.currency}
-            </p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  ); */
-
 }
 export default Catalog;

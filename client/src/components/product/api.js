@@ -19,10 +19,6 @@ async function getProducts(){
       return data.products.map(product => {
         return new Product(product)
       })
-      
-    /*   return data.map((product) => 
-        new Product(product)
-      ) */
 
     } catch(error){
       console.error('Error fetching product data:', error)

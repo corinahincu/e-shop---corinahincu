@@ -32,30 +32,6 @@ const ProductRoute = async (fastify: FastifyInstance) => {
     }
   );
 
-/* fastify.delete("/products/:id", async (req, reply) => {
-    const {id} = req.params as ProductRequestType
-
-    const { products } = await fastify.orm.query(
-        "DELETE FROM clients WHERE id = $1 RETURNING *",
-        [id]
-    )
-  }); */
-
 };
     export default ProductRoute
 
-/* 
-fastify.delete("/clients/:id", async (req, reply) => {
-    const clientId = req.params.id;
-
-    try {
-      const { rows } = await pool.query(
-        "DELETE FROM clients WHERE id = $1 RETURNING *",
-        [clientId]
-      );
-      reply.send(rows[0]);
-    } catch {
-      console.error("Error", error);
-      reply.status(500).send("Internal Server Error");
-    }
-  }); */

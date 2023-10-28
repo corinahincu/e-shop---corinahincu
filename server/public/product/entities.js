@@ -20,6 +20,10 @@ __decorate([
     __metadata("design:type", String)
 ], Product.prototype, "name", void 0);
 __decorate([
+    Column(),
+    __metadata("design:type", String)
+], Product.prototype, "image", void 0);
+__decorate([
     Column(() => Money),
     __metadata("design:type", Money)
 ], Product.prototype, "price", void 0);
