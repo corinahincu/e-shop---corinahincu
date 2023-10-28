@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Product({ productObject }) {
+export function Product({ productObject }) {
   const {
     name,
     image,
@@ -18,5 +18,3 @@ function Product({ productObject }) {
     </div>
   );
 }
-
-export default Product
