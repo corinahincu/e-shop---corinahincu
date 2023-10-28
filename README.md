@@ -1,1 +1,2 @@
-![2F2130BA-A413-4D2C-968B-4E93BE6791DA](https://github.com/corinahincu/e-shop---corinahincu/assets/117738625/d1e418c5-1072-4e9f-b78c-17692c8b4a89)
+
+![7C7D2FBC-3204-4CBF-8A8A-6CF048DED767](https://github.com/corinahincu/e-shop---corinahincu/assets/117738625/25dd4184-7808-42ae-97c8-478a83d83907)
