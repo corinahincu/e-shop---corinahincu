@@ -6,7 +6,6 @@ import { Quantity } from "./quantity"
 
 export function Cart( {item, quantity, cost }){
   const items = getCartItems
-  console.log(items)
   return (
     <tbody>
       <tr>
